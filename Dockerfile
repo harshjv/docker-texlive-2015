@@ -4,7 +4,7 @@ MAINTAINER Harsh Vakharia <harshjv@gmail.com>
 ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update
+RUN apt-get update && apt-get install -y wget
 
 ADD https://raw.githubusercontent.com/harshjv/docker-texlive-2015/master/install-tl-ubuntu install-tl-ubuntu
 RUN chmod +x install-tl-ubuntu

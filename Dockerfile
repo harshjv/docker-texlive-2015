@@ -11,6 +11,8 @@ RUN chmod +x install-tl-ubuntu
 
 RUN ./install-tl-ubuntu
 
+ENV PATH /opt/texbin:$PATH
+
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* \
            /tmp/* \

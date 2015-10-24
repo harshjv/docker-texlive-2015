@@ -15,8 +15,6 @@
 
     FROM harshjv/texlive-2015
     RUN tlmgr update --all
-    VOLUME /var/texlive
-    WORKDIR /var/texlive
 
 
 #### Build image
